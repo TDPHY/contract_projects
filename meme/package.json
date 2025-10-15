@@ -1,0 +1,40 @@
+{
+  "name": "shib-meme-token",
+  "version": "1.0.0",
+  "description": "SHIB风格Meme代币合约 - 包含代币税机制、流动性池集成和交易限制功能",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:goerli": "npx hardhat run scripts/deploy.js --network goerli",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "verify": "npx hardhat verify",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart-contracts",
+    "erc20",
+    "meme-token",
+    "defi",
+    "web3"
+  ],
+  "author": "Meme Token Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@openzeppelin/contracts": "^4.9.3",
+    "chai": "^4.3.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
